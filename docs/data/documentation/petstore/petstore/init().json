@@ -1,0 +1,148 @@
+{
+  "hierarchy" : {
+    "paths" : [
+      [
+        "doc:\/\/PetStore\/documentation\/PetStore",
+        "doc:\/\/PetStore\/documentation\/PetStore\/PetStore"
+      ]
+    ]
+  },
+  "identifier" : {
+    "interfaceLanguage" : "swift",
+    "url" : "doc:\/\/PetStore\/documentation\/PetStore\/PetStore\/init()"
+  },
+  "kind" : "symbol",
+  "metadata" : {
+    "externalID" : "s:8PetStoreAAVABycfc",
+    "fragments" : [
+      {
+        "kind" : "identifier",
+        "text" : "init"
+      },
+      {
+        "kind" : "text",
+        "text" : "()"
+      }
+    ],
+    "modules" : [
+      {
+        "name" : "PetStore"
+      }
+    ],
+    "role" : "symbol",
+    "roleHeading" : "Initializer",
+    "symbolKind" : "init",
+    "title" : "init()"
+  },
+  "primaryContentSections" : [
+    {
+      "declarations" : [
+        {
+          "languages" : [
+            "swift"
+          ],
+          "platforms" : [
+            "macOS"
+          ],
+          "tokens" : [
+            {
+              "kind" : "keyword",
+              "text" : "init"
+            },
+            {
+              "kind" : "text",
+              "text" : "()"
+            }
+          ]
+        }
+      ],
+      "kind" : "declarations"
+    }
+  ],
+  "schemaVersion" : {
+    "major" : 0,
+    "minor" : 3,
+    "patch" : 0
+  },
+  "sections" : [
+
+  ],
+  "variants" : [
+    {
+      "paths" : [
+        "\/documentation\/petstore\/petstore\/init()"
+      ],
+      "traits" : [
+        {
+          "interfaceLanguage" : "swift"
+        }
+      ]
+    }
+  ]
+, 
+"references": {
+"doc://PetStore/documentation/PetStore": {
+  "abstract" : [
+
+  ],
+  "identifier" : "doc:\/\/PetStore\/documentation\/PetStore",
+  "kind" : "symbol",
+  "role" : "collection",
+  "title" : "PetStore",
+  "type" : "topic",
+  "url" : "\/documentation\/petstore"
+},
+"doc://PetStore/documentation/PetStore/PetStore": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PetStore"
+    }
+  ],
+  "identifier" : "doc:\/\/PetStore\/documentation\/PetStore\/PetStore",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PetStore"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PetStore",
+  "type" : "topic",
+  "url" : "\/documentation\/petstore\/petstore"
+},
+"doc://PetStore/documentation/PetStore/PetStore/init()": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "identifier",
+      "text" : "init"
+    },
+    {
+      "kind" : "text",
+      "text" : "()"
+    }
+  ],
+  "identifier" : "doc:\/\/PetStore\/documentation\/PetStore\/PetStore\/init()",
+  "kind" : "symbol",
+  "role" : "symbol",
+  "title" : "init()",
+  "type" : "topic",
+  "url" : "\/documentation\/petstore\/petstore\/init()"
+}
+}
+}
