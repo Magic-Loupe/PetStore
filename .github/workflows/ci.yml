@@ -15,6 +15,7 @@ env:
 
 jobs:
   linux:
+    if: false
     runs-on: ubuntu-latest
     steps:
       - run: sudo apt-get update
@@ -67,7 +68,7 @@ jobs:
 
           # insert the docc dependency manually using sed to avoid
           # polluting Package.swift with unnecessary dependencies
-          sed -I "" 's;^ *var dependencies: \[Package.Dependency] = \[$;    var dependencies: [Package.Dependency] = [ .package(name: "swift-docc-plugin", url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"), ;1' Package.swift
+          sed -I "" 's;^ *dependencies: \[ *$;dependencies: \[ .package(name: "swift-docc-plugin", url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),;g' Package.swift
 
           cat Package.swift
 

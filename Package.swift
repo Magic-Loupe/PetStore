@@ -3,6 +3,8 @@ import PackageDescription
 
 let package = Package(
     name: "PetStore",
+    defaultLocalization: "en",
+    platforms: [ .macOS(.v13), .iOS(.v16) ],
     products: [
         .library(name: "PetStore", targets: ["PetStore"]),
     ],
@@ -14,7 +16,10 @@ let package = Package(
         .target(name: "PetStore", dependencies: [
             .product(name: "JXPod", package: "JXPod"),
             .product(name: "JXSwiftUI", package: "JXSwiftUI"),
-            ]),
+        ], resources: [
+            .process("Resources"),
+            .copy("*.js"),
+        ]),
         .testTarget(
             name: "PetStoreTests",
             dependencies: ["PetStore"]),
