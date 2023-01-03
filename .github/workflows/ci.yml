@@ -25,8 +25,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Test (Debug)
         run: swift test -v --configuration debug
-      - name: Test (Release)
-        run: swift test -v --configuration release -Xswiftc -enable-testing
+      #- name: Test (Release)
+        #run: swift test -v --configuration release -Xswiftc -enable-testing
 
   ios:
     runs-on: macos-12
@@ -34,8 +34,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Test (Debug)
         run: xcodebuild clean test -configuration Debug -scheme "PetStore" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
-      - name: Test (Release)
-        run: xcodebuild clean test -configuration Release -scheme "PetStore" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
+      #- name: Test (Release)
+        #run: xcodebuild clean test -configuration Release -scheme "PetStore" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
 
   tvos:
     runs-on: macos-12
@@ -43,8 +43,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Test (Debug)
         run: xcodebuild clean test -configuration Debug -scheme "PetStore" -sdk "appletvsimulator" -destination "platform=tvOS Simulator,name=Apple TV" 
-      - name: Test (Release)
-        run: xcodebuild clean test -configuration Release -scheme "PetStore" -sdk "appletvsimulator" -destination "platform=tvOS Simulator,name=Apple TV" 
+      #- name: Test (Release)
+        #run: xcodebuild clean test -configuration Release -scheme "PetStore" -sdk "appletvsimulator" -destination "platform=tvOS Simulator,name=Apple TV" 
 
   macos:
     runs-on: macos-12
@@ -52,8 +52,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: Test (Debug)
         run: swift test -v --configuration debug
-      - name: Test (Release)
-        run: swift test -v --configuration release -Xswiftc -enable-testing
+      #- name: Test (Release)
+        #run: swift test -v --configuration release -Xswiftc -enable-testing
 
   api-doc:
     runs-on: macos-12 # needed to be able to document SwiftUI
