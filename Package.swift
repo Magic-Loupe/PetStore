@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "PetStore",
     defaultLocalization: "en",
-    platforms: [ .macOS(.v13), .iOS(.v16) ],
+    platforms: [ .macOS(.v12), .iOS(.v15) ],
     products: [
         .library(name: "PetStore", targets: ["PetStore"]),
     ],
@@ -18,7 +18,7 @@ let package = Package(
             .product(name: "JXSwiftUI", package: "JXSwiftUI"),
         ], resources: [
             .process("Resources"),
-            .copy("*.js"),
+            .copy("jxmodule"),
         ]),
         .testTarget(
             name: "PetStoreTests",
