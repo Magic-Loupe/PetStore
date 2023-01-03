@@ -4,6 +4,7 @@ import XCTest
 final class PetStoreTests: XCTestCase {
     func testPetStore() throws {
         let _ = PetStoreModule()
-        // XCTAssertEqual(PetStore().text, "Hello, World!")
+        let js = try Data(contentsOf: PetStoreModule.moduleURL.appendingPathComponent("PetStoreView.js"))
+        XCTAssertNotEqual(0, js.count)
     }
 }

@@ -2,37 +2,6 @@
   "interfaceLanguages" : {
     "swift" : [
       {
-        "children" : [
-          {
-            "title" : "Structures",
-            "type" : "groupMarker"
-          },
-          {
-            "children" : [
-              {
-                "title" : "Initializers",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/petstore\/petstore\/init()",
-                "title" : "init()",
-                "type" : "init"
-              },
-              {
-                "title" : "Instance Properties",
-                "type" : "groupMarker"
-              },
-              {
-                "path" : "\/documentation\/petstore\/petstore\/text",
-                "title" : "var text: String",
-                "type" : "property"
-              }
-            ],
-            "path" : "\/documentation\/petstore\/petstore",
-            "title" : "PetStore",
-            "type" : "struct"
-          }
-        ],
         "path" : "\/documentation\/petstore",
         "title" : "PetStore",
         "type" : "module"
