@@ -2,7 +2,7 @@ import JXKit
 import JXSwiftUI
 import SwiftUI
 
-struct PetStoreView: View {
+public struct PetStoreView: View {
     let context: JXContext
     @StateObject private var model: PetStoreModel = {
         let model = PetStoreModel()
@@ -10,7 +10,7 @@ struct PetStoreView: View {
         return model
     }()
     
-    init(context: JXContext = JXContext()) {
+    public init(context: JXContext = JXContext()) {
         self.context = context
         do {
             try context.registry.register(PetStoreModule())
@@ -19,7 +19,7 @@ struct PetStoreView: View {
         }
     }
     
-    var body: some View {
+    public var body: some View {
         JXView(context: context) { context in
             return try context.new("petstore.PetListView", withArguments: [model])
         }

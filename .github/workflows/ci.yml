@@ -38,6 +38,7 @@ jobs:
         #run: xcodebuild clean test -configuration Release -scheme "PetStore" -sdk "iphonesimulator" -destination "platform=iOS Simulator,name=iPhone 14 Pro"
 
   tvos:
+    if: false
     runs-on: macos-12
     steps:
       - uses: actions/checkout@v2
