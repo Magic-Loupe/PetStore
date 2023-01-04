@@ -18,7 +18,7 @@ dependencies: [ .package(name: "swift-docc-plugin", url: "https://github.com/app
             .product(name: "JXSwiftUI", package: "JXSwiftUI"),
         ], resources: [
             .process("Resources"),
-            .copy("jsmodules"),
+            .copy("jxmodule"),
         ]),
         .testTarget(
             name: "PetStoreTests",
