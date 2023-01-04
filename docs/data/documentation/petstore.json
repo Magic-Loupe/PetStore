@@ -34,6 +34,7 @@
   "topicSections" : [
     {
       "identifiers" : [
+        "doc:\/\/PetStore\/documentation\/PetStore\/PetStoreModule",
         "doc:\/\/PetStore\/documentation\/PetStore\/PetStoreView"
       ],
       "title" : "Structures"
@@ -230,6 +231,37 @@
   "title" : "PetStoreInfo",
   "type" : "topic",
   "url" : "\/documentation\/petstore\/petstoreinfo"
+},
+"doc://PetStore/documentation/PetStore/PetStoreModule": {
+  "abstract" : [
+
+  ],
+  "fragments" : [
+    {
+      "kind" : "keyword",
+      "text" : "struct"
+    },
+    {
+      "kind" : "text",
+      "text" : " "
+    },
+    {
+      "kind" : "identifier",
+      "text" : "PetStoreModule"
+    }
+  ],
+  "identifier" : "doc:\/\/PetStore\/documentation\/PetStore\/PetStoreModule",
+  "kind" : "symbol",
+  "navigatorTitle" : [
+    {
+      "kind" : "identifier",
+      "text" : "PetStoreModule"
+    }
+  ],
+  "role" : "symbol",
+  "title" : "PetStoreModule",
+  "type" : "topic",
+  "url" : "\/documentation\/petstore\/petstoremodule"
 },
 "doc://PetStore/documentation/PetStore/PetStoreView": {
   "abstract" : [

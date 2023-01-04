@@ -10,6 +10,80 @@
           {
             "children" : [
               {
+                "title" : "Instance Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/petstore\/petstoremodule\/namespace",
+                "title" : "var namespace: JXNamespace",
+                "type" : "property"
+              },
+              {
+                "title" : "Instance Methods",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/petstore\/petstoremodule\/register(with:)",
+                "title" : "func register(with: JXRegistry) throws",
+                "type" : "method"
+              },
+              {
+                "title" : "Type Properties",
+                "type" : "groupMarker"
+              },
+              {
+                "path" : "\/documentation\/petstore\/petstoremodule\/localurl",
+                "title" : "static let localURL: URL?",
+                "type" : "property"
+              },
+              {
+                "path" : "\/documentation\/petstore\/petstoremodule\/remoteurl",
+                "title" : "static let remoteURL: URL?",
+                "type" : "property"
+              },
+              {
+                "title" : "Default Implementations",
+                "type" : "groupMarker"
+              },
+              {
+                "children" : [
+                  {
+                    "title" : "Instance Methods",
+                    "type" : "groupMarker"
+                  },
+                  {
+                    "path" : "\/documentation\/petstore\/petstoremodule\/define(for:in:)",
+                    "title" : "func define(for: Any, in: JXContext) throws -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/petstore\/petstoremodule\/define(symbol:namespace:in:)",
+                    "title" : "func define(symbol: String, namespace: JXNamespace, in: JXContext) throws -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/petstore\/petstoremodule\/defineall(namespace:in:)",
+                    "title" : "func defineAll(namespace: JXNamespace, in: JXContext) throws -> Bool",
+                    "type" : "method"
+                  },
+                  {
+                    "path" : "\/documentation\/petstore\/petstoremodule\/initialize(in:)",
+                    "title" : "func initialize(in: JXContext)",
+                    "type" : "method"
+                  }
+                ],
+                "path" : "\/documentation\/petstore\/petstoremodule\/jxmodule-implementations",
+                "title" : "JXModule Implementations",
+                "type" : "symbol"
+              }
+            ],
+            "path" : "\/documentation\/petstore\/petstoremodule",
+            "title" : "PetStoreModule",
+            "type" : "struct"
+          },
+          {
+            "children" : [
+              {
                 "title" : "Initializers",
                 "type" : "groupMarker"
               },
