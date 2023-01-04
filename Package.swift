@@ -18,7 +18,7 @@ let package = Package(
             .product(name: "JXSwiftUI", package: "JXSwiftUI"),
         ], resources: [
             .process("Resources"),
-            .copy("jsmodules"),
+            .copy("jxmodule"),
         ]),
         .testTarget(
             name: "PetStoreTests",
