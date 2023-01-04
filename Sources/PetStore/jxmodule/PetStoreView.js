@@ -58,7 +58,7 @@ class PetDetailView extends View {
                 Text("$" + this.pet.price)
                     .font(Font.title.monospaced().bold())
                     .foregroundColor(Color.blue)
-                    .background(Color.yellow)
+                    .background(Color.purple)
             ]),
             Section('Pet info', [
                 Text('Slider value: ' + this.state.sliderValue),
