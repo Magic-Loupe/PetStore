@@ -2513,25 +2513,6 @@
             "path" : "\/documentation\/petstore\/petstoreview",
             "title" : "PetStoreView",
             "type" : "struct"
-          },
-          {
-            "title" : "Variables",
-            "type" : "groupMarker"
-          },
-          {
-            "path" : "\/documentation\/petstore\/petstorebundle",
-            "title" : "let PetStoreBundle: Bundle",
-            "type" : "var"
-          },
-          {
-            "path" : "\/documentation\/petstore\/petstorebundleidentifier",
-            "title" : "let PetStoreBundleIdentifier: String!",
-            "type" : "var"
-          },
-          {
-            "path" : "\/documentation\/petstore\/petstoreinfo",
-            "title" : "let PetStoreInfo: NSDictionary?",
-            "type" : "var"
           }
         ],
         "path" : "\/documentation\/petstore",

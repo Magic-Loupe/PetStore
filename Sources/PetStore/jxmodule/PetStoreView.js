@@ -9,7 +9,6 @@ exports.PetListView = class extends View {
     body() {
         const model = this.observed.model;
         return VStack([
-            Button("New Pet", () => { withAnimation(() => model.addPet()) }),
             List([
                 ForEach(model.pets, (pet) => {
                     return pet.id;
@@ -20,9 +19,9 @@ exports.PetListView = class extends View {
                         withAnimation(() => model.sellPet(pet.id));
                     }))
                 })
-            ])
+            ]),
+            Button("New Pet", () => { withAnimation(() => model.addPet()) }),
         ])
-        .navigationTitle('Pet Store')
     }
 }
 
