@@ -20,7 +20,7 @@ exports.PetListView = class extends View {
                     }))
                 })
             ]),
-            Button("New Pet", () => { withAnimation(() => model.addPet()) }),
+            Button("Create Pet", () => { withAnimation(() => model.addPet()) }),
         ])
     }
 }
