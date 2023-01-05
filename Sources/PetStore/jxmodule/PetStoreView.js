@@ -19,8 +19,9 @@ exports.PetListView = class extends View {
                         withAnimation(() => model.sellPet(pet.id));
                     }))
                 })
-            ]),
-            Button("Create Pet", () => { withAnimation(() => model.addPet()) }),
+            ])
+            .foregroundColor(Color.green),
+            Button("New Pet", () => { withAnimation(() => model.addPet()) }),
         ])
     }
 }
