@@ -28,6 +28,34 @@ struct PetView: View {
     }
 }
 
+/// Marker protocol for SwiftSyntax to scan and convert AST from Swift to JS.
+protocol JXDynamicView : View {
+
+}
+
+struct CosmeticView : JXDynamicView {
+    /**
+     `jxmodule/CosmeticView.js`
+
+     ```
+     exports.CosmeticView = class extends View {
+         body() {
+             return VStack([
+                 Text("Hello").foregroundColor(Color.orange),
+                 Text("World").bold()
+             ])
+         }
+     }
+    ```
+     */
+    var body: some View {
+        VStack {
+            Text("Hello").foregroundColor(Color.orange)
+            Text("World").bold()
+        }
+    }
+}
+
 extension PetView: JXStaticBridging {
     static func jxBridge() throws -> JXBridge {
         JXBridgeBuilder(type: self).asJXSwiftUIView().constructor { PetView.init }.bridge
