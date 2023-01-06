@@ -20,7 +20,8 @@ exports.PetListView = class extends View {
                     }))
                 })
             ])
-            .foregroundColor(Color.green),
+            //.foregroundColor(Color.green)
+            ,
             Button("New Pet", () => { withAnimation(() => model.addPet()) }),
         ])
     }
