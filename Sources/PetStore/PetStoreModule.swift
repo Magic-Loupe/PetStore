@@ -8,19 +8,14 @@ public extension JXNamespace {
 }
 
 public struct PetStoreModule: JXDynamicModule {
-    public var namespace: JXNamespace = .petstore
-
-    /// The localURL is where local script and resources are stored
-    public static let localURL = URL(string: "jxmodule", relativeTo: Bundle.module.resourceURL)!
-
-    /// The remoteURL gives the location of the URL resources relative to an archive that is derived from the relative URL (which will vary depending on the service provider)
-    public static let remoteURL = URL(string: "Sources/PetStore/jxmodule", relativeTo: URL(string: "https://github.com/Magic-Loupe/PetStore.git"))!
+    public static var bundle = Bundle.module
+    public static let namespace: JXNamespace = .petstore
 
     public func register(with registry: JXRegistry) throws {
         try registry.register(JXSwiftUI())
-        try registry.registerBridge(for: PetStoreModel(), namespace: namespace)
-        try registry.registerBridge(for: Pet.random(), namespace: namespace)
-        try registry.registerBridge(for: PetView.self, namespace: namespace)
-        try registry.registerModuleScript(resource: "/PetStoreView.js", root: Self.localURL, namespace: namespace)
+        try registry.registerBridge(for: PetStoreModel(), namespace: Self.namespace)
+        try registry.registerBridge(for: Pet.random(), namespace: Self.namespace)
+        try registry.registerBridge(for: PetView.self, namespace: Self.namespace)
+        try registry.registerModuleScript(resource: "/PetStoreView.js", root: Self.localModuleRoot, namespace: Self.namespace)
     }
 }
